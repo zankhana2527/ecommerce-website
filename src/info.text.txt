@@ -1,4 +1,5 @@
 primary color - #34A994
+seconday color - #FBFBFB
 
 
 fonts: "Helvetica Neue", Helvetica, Arial, sans-serif
