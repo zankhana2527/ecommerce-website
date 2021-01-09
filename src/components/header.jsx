@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../assets/logo.png';
+import {connect} from 'react-redux';
 
-const Header = () => {
+const Header = (props) => {
 
     const languages = ['ENG', 'DE', 'PL']
     const currency = ['US', 'EUR', 'PLN']
@@ -43,13 +44,13 @@ const Header = () => {
                 <div className="right">
                     <div>
                         <i className="far fa-heart"></i>
-                        <span>Wishlist: <b> 2 </b></span>
+                        <span>Wishlist: <b> {props.wishlistCount} </b></span>
 
                         <i className="fas fa-shopping-bag"></i>
-                        <span>Shopping cart: <b className='price'> $129.00 </b></span>
+                        <span>Shopping cart: <b className='price'> ${ props.totalItemsInCart * 279} </b></span>
                     </div>
 
-                    <div className='search-box'>
+                    <div className='search'>
                         <input type="text" placeholder='SEARCH'/>
                         <i className="fas fa-search"></i>
                     </div>
@@ -59,4 +60,12 @@ const Header = () => {
     )
 }
 
-export default Header
+
+const mapStateToProps = (state) => {
+    return {
+        wishlistCount: state.main.wishlistCount,
+        totalItemsInCart: state.main.totalItemsInCart
+    }
+}
+
+export default connect(mapStateToProps,{})(Header)

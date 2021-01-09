@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "brand": "Calvin Klein",
+        "product": "Slimm pants",
+        "catogory": ["pants"],
+        "images": ["/pants/jogger.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 2,
+        "brand": "Calvin Klein",
+        "product": "Low slim jeans",
+        "catogory": ["pants"],
+        "images": ["/pants/pant1.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 3,
+        "brand": "Calvin Klein",
+        "product": "Gummi Sweater",
+        "catogory": ["sweater"],
+        "images": ["/sweater/sweater1.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 4,
+        "brand": "Mc neal",
+        "product": "Low slimm jeans",
+        "catogory": ["tshirt"],
+        "images": ["/tshirts/tshirt1.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 5,
+        "brand": "Mc neal",
+        "product": "Tshirt blue",
+        "catogory": ["tshirt"],
+        "images": ["/tshirts/tshirt2.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 6,
+        "brand": "Channel",
+        "product": "Fashion bag",
+        "catogory": ["bag"],
+        "images": ["/bags/bag1.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 7,
+        "brand": "Calvin Klein",
+        "product": "Very elegent dress",
+        "catogory": ["dress"],
+        "images": ["/dresses/dress1.jpg"],
+        "price": "$279.00" 
+    },
+    {
+        "id": 8,
+        "brand": "Calvin Klein",
+        "product": "Low slimm jeans",
+        "catogory": ["tshirt"],
+        "images": ["/tshirts/tshirt3.jpg"],
+        "price": "$279.00" 
+    }
+
+]
