@@ -462,14 +462,24 @@ footer .info-footer {
   display: inline;
 }
 
+.pagination ul {
+  width: 370%;
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination li {
+  padding: 12px 20px;
+}
+
+.pagination li:hover {
+  cursor: pointer;
+}
+
 .pagination a {
   text-decoration: none;
 }
 
-.sweaterPage img {
-  text-align: center;
-}
-
-.sweaterImage {
+.bannerImage {
   text-align: center;
 }

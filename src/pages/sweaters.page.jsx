@@ -9,7 +9,7 @@ const SweatersPage = () => {
 
     const [products, setProducts] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
-    const [productsPerPage] = useState(9)
+    const [productsPerPage] = useState(8)
 
     useEffect(() => {
        fetch('products.json', {
@@ -21,7 +21,7 @@ const SweatersPage = () => {
        .then(res => res.json())
        .then(data => { setProducts(data)}) 
     }, [])
-
+ 
     const indexOfLastProduct = currentPage * productsPerPage
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct)
@@ -30,9 +30,11 @@ const SweatersPage = () => {
 
     return (
         <div className='sweaterPage'>
-            <img src={BannerSweater} alt="banner-sweater" className='sweaterImage'/>
+            <div className="bannerImage">
+            <img src={BannerSweater} alt="banner-sweater"/>
+            </div>
             <div className="product-grid">
-                    {products.map(product => <ProductCard product={product} products={currentProducts}/>)}
+                    {currentProducts.map(product => <ProductCard product={product} />)}
             <Pagination productsPerPage={productsPerPage} products={products.length} paginate={paginate}/>
             </div>
             <div className="wrapper">

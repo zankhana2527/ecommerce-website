@@ -6,7 +6,7 @@ import { updateCart } from '../store/actions/mainAction'
 
 const ProductCard = (props) => {
 
-    const { product, products } = props
+    const { product } = props
     
     const [onHover, setOnHover] = useState(false)
 
@@ -20,7 +20,7 @@ const ProductCard = (props) => {
 
     return (
         <>
-        <div className="card" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} products={products} > 
+        <div className="card" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} > 
             <img src={Jogger} alt={product.id}/>
             <div className="divider"/>
             <div className="container">
